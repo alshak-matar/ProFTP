@@ -1,7 +1,7 @@
 #!/bin/bash
 export IFS=","
 
-cat /home/sofiane/Téléchargements/Shell_Userlist.csv | while read Id Prenom Nom Mdp Role
+cat /home/alshakmatar/Téléchargements/Shell_Userlist.csv | while read Id Prenom Nom Mdp Role
 	do
 	sudo userdel $Prenom-$Nom
 	sudo groupdel $Prenom-$Nom
